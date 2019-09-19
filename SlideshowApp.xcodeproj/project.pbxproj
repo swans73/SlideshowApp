@@ -12,6 +12,10 @@
 		084325CA23318585003667AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084325C823318585003667AA /* Main.storyboard */; };
 		084325CC23318586003667AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084325CB23318586003667AA /* Assets.xcassets */; };
 		084325CF23318586003667AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084325CD23318586003667AA /* LaunchScreen.storyboard */; };
+		084325DD233391D4003667AA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084325DC233391D4003667AA /* ResultViewController.swift */; };
+		084325DF23339748003667AA /* fushigidane.png in Resources */ = {isa = PBXBuildFile; fileRef = 084325DE23339748003667AA /* fushigidane.png */; };
+		084325E123339750003667AA /* hitokage.png in Resources */ = {isa = PBXBuildFile; fileRef = 084325E023339750003667AA /* hitokage.png */; };
+		084325E323339758003667AA /* zenigame.png in Resources */ = {isa = PBXBuildFile; fileRef = 084325E223339758003667AA /* zenigame.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		084325CB23318586003667AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084325CE23318586003667AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084325D023318586003667AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084325DC233391D4003667AA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		084325DE23339748003667AA /* fushigidane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fushigidane.png; path = ../../../MyImage/fushigidane.png; sourceTree = "<group>"; };
+		084325E023339750003667AA /* hitokage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hitokage.png; path = ../../../MyImage/hitokage.png; sourceTree = "<group>"; };
+		084325E223339758003667AA /* zenigame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zenigame.png; path = ../../../MyImage/zenigame.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,16 @@
 		084325C323318585003667AA /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				084325DE23339748003667AA /* fushigidane.png */,
+				084325E023339750003667AA /* hitokage.png */,
+				084325E223339758003667AA /* zenigame.png */,
 				084325C423318585003667AA /* AppDelegate.swift */,
 				084325C623318585003667AA /* ViewController.swift */,
 				084325C823318585003667AA /* Main.storyboard */,
 				084325CB23318586003667AA /* Assets.xcassets */,
 				084325CD23318586003667AA /* LaunchScreen.storyboard */,
 				084325D023318586003667AA /* Info.plist */,
+				084325DC233391D4003667AA /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,6 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				084325CF23318586003667AA /* LaunchScreen.storyboard in Resources */,
+				084325E123339750003667AA /* hitokage.png in Resources */,
+				084325DF23339748003667AA /* fushigidane.png in Resources */,
+				084325E323339758003667AA /* zenigame.png in Resources */,
 				084325CC23318586003667AA /* Assets.xcassets in Resources */,
 				084325CA23318585003667AA /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			files = (
 				084325C723318585003667AA /* ViewController.swift in Sources */,
 				084325C523318585003667AA /* AppDelegate.swift in Sources */,
+				084325DD233391D4003667AA /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
