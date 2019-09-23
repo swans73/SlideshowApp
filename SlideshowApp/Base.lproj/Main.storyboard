@@ -40,7 +40,6 @@
                                         <state key="normal" title="戻る"/>
                                         <connections>
                                             <action selector="Prev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTb-jG-hDq"/>
-                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrW-nb-vQO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUg-Ek-vD6">
