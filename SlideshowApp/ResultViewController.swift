@@ -9,7 +9,7 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-//2画面目のがImageViewを、storyboardでこのViewControllerにアウトレット接続
+//2画面目のImageViewを、storyboardでこのViewControllerにアウトレット接続
     @IBOutlet weak var Expansion: UIImageView!
     //受け取るためのプロパティ
     var gazou: UIImage!

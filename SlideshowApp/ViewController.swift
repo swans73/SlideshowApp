@@ -37,18 +37,32 @@ class ViewController: UIViewController {
     }
     //再生/一時停止ボタン
 
+    @IBOutlet weak var PrevButton: UIButton!
+    @IBOutlet weak var NextButton: UIButton!
+    @IBOutlet weak var startPause: UIButton!
     @IBAction func startTimer(_ sender: Any) {
         //再生ボタンが押されたら、タイマーの作成、始動
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            startPause.setTitle("一時停止", for: .normal)
+            //戻るボタンと進むボタンをタップ不可にする
+            PrevButton.isEnabled = false
+            NextButton.isEnabled = false
+        } else {
+            startPause.setTitle("再生", for: .normal)
+            self.timer.invalidate()
+            self.timer = nil
+            //戻るボタンと進むボタンをタップ可にする
+            PrevButton.isEnabled = true
+            NextButton.isEnabled = true
         }
     }
     //画像をタップしたら処理を実行
     @IBAction func tapAction(_ sender: Any) {
+        self.timer.invalidate()
     }
     //他の画面からsegueを使って戻ってきたときに呼ばれる
     @IBAction func unwind(_ segue: UIStoryboardSegue){
-          self.timer.invalidate()
     }
     //UIImageViewをアウトレット接続
     @IBOutlet weak var Image: UIImageView!
